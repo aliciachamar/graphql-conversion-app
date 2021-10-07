@@ -42,7 +42,7 @@ function Feed() {
     <div className="feed">
       <div className="feedWrapper">
         <h1>TEST</h1>
-        {loading ? (
+        {/* {loading ? (
           <h1>Loading posts...</h1>
         ) : (
           data.getPosts && data.getPosts.map((post) => (
@@ -50,7 +50,7 @@ function Feed() {
               <PostCard post={post} />
             </div>
           ))
-        )}
+        )} */}
       </div>
     </div>
   )

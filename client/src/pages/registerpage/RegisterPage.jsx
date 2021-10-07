@@ -133,7 +133,8 @@ function Register(props) {
       props.history.push("/");
     },
     onError(err){
-      setErrors(err.graphQLErrors[0].extensions.errors);
+      console.log("ERR: ", err);
+      // setErrors(err);
     },
     variables: values
   });
@@ -186,7 +187,7 @@ function Register(props) {
           Register
         </Button>
       </Form>
-      {Object.keys(errors).length > 0 && (
+      {/* {Object.keys(errors).length > 0 && (
         <div className="ui error message">
           <ul className="list">
             {Object.values(errors).map(value => (
@@ -194,7 +195,7 @@ function Register(props) {
             ))}
           </ul>
         </div>
-      )}
+      )} */}
     </div>
   )
 }

@@ -107,8 +107,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import { useContext } from "react";
-import { AuthContext } from "./context/AuthContext";
-import { AuthProvider } from "./context/auth";
+import { AuthContext, AuthProvider } from "./context/auth";
 import AuthRoute from "./utils/AuthRoute";
 import "semantic-ui-css/semantic.min.css";
 
